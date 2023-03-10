@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1, 
+        "nome": "Juca",
+        "email": "j@e.com",
+        "comentarios": [],
+        "imagem": null,
+        "nota": 5.5,
+        "ativo": true
+    },
+    {
+        "id": 2,
+        "nome": "Maria",
+        "email": "m@e.com",
+        "pais": "Brasil",
+        "comentarios": [
+            "muito bom, recomendo",
+            "pior produto possivel!"
+        ]
+    }
+]
+
+
