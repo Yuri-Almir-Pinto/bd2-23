@@ -58,6 +58,17 @@ db.commits.find()
 db.commits.find().limit(1)
 ```
 
+**Like** - regex encontra documentos cujo campo nome inicia com a String "note"
+```js
+// i - case insensitive
+db.produtos.find( { nome: { $regex: /^Note/i } } )
+```
+
+O exemplo acima seria o equivalente ao SQL:
+```sql
+SELECT * FROM produtos WHERE nome like "%Note";
+```
+
 **Select where name equal tesseract**:
 ```js
 db.repo.find({'name':'tesseract'})
