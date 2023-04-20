@@ -16,6 +16,14 @@ Define o database padrão para executar as consultas:
 use dbname
 ```
 
+```js
+mongoimport --db brasil --collection estados --type csv --headerline --file estados.csv
+
+mongoimport --db brasil --collection municipios --type csv --headerline --file municipios.csv --fields cod_uf,cod,nome
+
+mongoimport --db br2 --collection municipios --drop --file municipios.json --jsonArray
+```
+
 Após executar `use dbname`, o mongodb define a variável `db` para executar as consultas na base de dados.
 
 Por exemplo, se existe uma collection chamada "alunos", podemos listar o nome dos alunos com o comando:
